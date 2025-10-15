@@ -41,11 +41,9 @@
         .header-carousel .owl-carousel-item .position-absolute { min-height: 500px; display: flex; align-items: center; }
         .service-carousel .bg-light { min-height: 400px; }
         .testimonial-carousel .testimonial-text { min-height: 150px; }
-        .navbar-brand h2 { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 2.5rem; }
-        body { overflow-x: hidden; }
-        .container, .container-fluid { max-width: 100%; padding-left: 15px; padding-right: 15px; }
-        .row { margin-left: -15px; margin-right: -15px; }
+        .navbar-brand img { height: 60px; width: auto; }
         @media (max-width: 767px) {
+            .navbar-brand img { height: 40px !important; }
             .display-3 { font-size: 2rem !important; }
             .container-xxl { padding: 0 !important; }
             .py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
@@ -62,10 +60,12 @@
             .form-floating label { font-size: 0.9rem; }
             .d-flex.align-items-center.mb-3 img { width: 40px; height: 40px; }
             .copyright .row { flex-direction: column; text-align: center; }
-            .navbar-brand h1 { font-size: 1.5rem !important; white-space: normal !important; word-wrap: break-word !important; }
         }
         .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label { opacity: 0.65; transform: scale(.85) translateY(-.75rem) translateX(.15rem); }
         .form-floating > .form-control:-webkit-autofill ~ label { opacity: 0.65; transform: scale(.85) translateY(-.75rem) translateX(.15rem); }
+        body { overflow-x: hidden; }
+        .container, .container-fluid { max-width: 100%; padding-left: 15px; padding-right: 15px; }
+        .row { margin-left: -15px; margin-right: -15px; }
     </style>
     <!-- Local Business Schema -->
     <script type="application/ld+json">
@@ -92,7 +92,7 @@
         <div class="row align-items-center top-bar">
             <div class="col-lg-3 col-md-12 text-center text-lg-start">
                 <a href="" class="navbar-brand m-0 p-0">
-                    <h2 class="text-primary m-0">MENding Men One Walk and Talk at a Time</h2>
+                    <img src="img/mend-logo.png" alt="MENd Logo - Walk and Talk for Men's Mental Health" style="height: 60px; width: auto;">
                 </a>
             </div>
             <div class="col-lg-9 col-md-12 text-end">
@@ -110,7 +110,7 @@
     <div class="container-fluid nav-bar bg-light">
         <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
             <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
-                <h1 class="text-primary m-0">MENding Men One Walk and Talk at a Time</h1>
+                <img src="img/mend-logo.png" alt="MENd Logo - Walk and Talk for Men's Mental Health" style="height: 40px; width: auto;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -298,7 +298,6 @@
                 </tbody>
             </table>
             <p class="text-center mt-4">These statistics show the urgent need for support like MENd's one-to-one walks. Your participation or donation could save a life. For urgent needs, call 999 or Samaritans (116 123).</p>
-            </div>
         </div>
     </div>
     <!-- Stats End -->
@@ -657,9 +656,20 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Custom Carousel Script -->
+    <script>
+        $(document).ready(function(){
+            $(".header-carousel").owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 10000,
+                smartSpeed: 1500,
+                items: 1
+            });
+        });
+    </script>
 </body>
 </html>
-
-
-
-
