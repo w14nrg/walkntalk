@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,7 +63,10 @@
             .form-floating label { font-size: 0.9rem; }
             .d-flex.align-items-center.mb-3 img { width: 40px; height: 40px; }
             .copyright .row { flex-direction: column; text-align: center; }
+            .navbar-brand h1 { font-size: 1.5rem !important; white-space: normal !important; word-wrap: break-word !important; }
         }
+        .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label { opacity: 0.65; transform: scale(.85) translateY(-.75rem) translateX(.15rem); }
+        .form-floating > .form-control:-webkit-autofill ~ label { opacity: 0.65; transform: scale(.85) translateY(-.75rem) translateX(.15rem); }
     </style>
     <!-- Local Business Schema -->
     <script type="application/ld+json">
@@ -275,20 +279,5 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <!-- Custom Carousel Script -->
-    <script>
-        $(document).ready(function(){
-            $(".header-carousel").owlCarousel({
-                loop: true,
-                margin: 0,
-                nav: false,
-                dots: true,
-                autoplay: true,
-                autoplayTimeout: 10000,
-                smartSpeed: 1500,
-                items: 1
-            });
-        });
-    </script>
 </body>
 </html>
