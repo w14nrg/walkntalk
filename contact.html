@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Contact - MENd Walk and Talk for Men's Mental Health</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <meta name="keywords" content="contact men's mental health support, walk and talk West London, mental health help Hammersmith, Fulham, Kensington, Chelsea">
     <meta name="description" content="Contact MENd for one-to-one walk and talk support in Hammersmith, Fulham, Kensington & Chelsea. Get in touch for any mental health reason. For urgent help, call 999 or Samaritans (116 123).">
     <!-- Favicon -->
@@ -275,5 +275,20 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Custom Carousel Script -->
+    <script>
+        $(document).ready(function(){
+            $(".header-carousel").owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 10000,
+                smartSpeed: 1500,
+                items: 1
+            });
+        });
+    </script>
 </body>
 </html>
