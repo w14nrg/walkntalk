@@ -34,6 +34,10 @@
         .btn-outline-primary { border-color: #FF6600 !important; color: #FF6600 !important; }
         .btn-outline-primary:hover { background-color: #FF6600 !important; color: white !important; }
         .spinner-border { border-color: #FF6600 !important; border-right-color: transparent !important; }
+        .bg-light { background-color: #d3d3d3 !important; } /* Lighter grey to replace any light blue-ish */
+        .nav-bar { background-color: #808080 !important; }
+        .navbar-light .navbar-nav .nav-link { color: #FF6600 !important; }
+        .navbar-light .navbar-nav .nav-link.active { color: #FF6600 !important; }
     </style>
     <!-- Local Business Schema -->
     <script type="application/ld+json">
@@ -392,6 +396,78 @@
         </div>
     </div>
     <!-- Testimonial End -->
+    <!-- FAQ Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-secondary text-uppercase">FAQ</h6>
+                <h1 class="mb-5">Frequently Asked Questions</h1>
+            </div>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is MENd?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            MENd is a community interest company offering walk and talk support for men's mental health in Hammersmith & Fulham, Kensington & Chelsea. It's from men who have suffered to those who are suffering.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How does talking help men's mental health?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Talking reduces isolation, improves focus, and builds coping strategies. In the UK, 40% of men never talk about their mental health, leading to higher suicide rates (17.4 per 100,000 males).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What are the benefits of walk and talk therapy?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Combining talking with walking in nature enhances mood, reduces stress, and promotes physical health. It's effective for depression (affecting 12.5% of men) and anxiety.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Who can join MENd sessions?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Any man in Hammersmith, Fulham, Kensington, or Chelsea experiencing mental health challenges. Sessions are supportive and confidential.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            How do I get involved?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Contact us through the enquiry form or social media to join a walk and talk session. We're here to help.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ End -->
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -461,5 +537,20 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Custom Carousel Script -->
+    <script>
+        $(document).ready(function(){
+            $(".header-carousel").owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 10000, // Slower autoplay
+                smartSpeed: 1500, // Slower transition
+                items: 1
+            });
+        });
+    </script>
 </body>
 </html>
