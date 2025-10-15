@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>About - MENd Walk and Talk for Men's Mental Health</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <meta name="keywords" content="men's mental health story, walk and talk founder, mental health recovery">
     <meta name="description" content="Learn about the founder of MENd, a community interest company supporting men's mental health through one-to-one walk and talk sessions in Hammersmith, Fulham, Kensington & Chelsea.">
     <!-- Favicon -->
@@ -42,18 +43,31 @@
         .service-carousel .bg-light { min-height: 400px; }
         .testimonial-carousel .testimonial-text { min-height: 150px; }
         .navbar-brand h2 { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 2.5rem; }
+        body { overflow-x: hidden; }
+        .container, .container-fluid { max-width: 100%; padding-left: 15px; padding-right: 15px; }
+        .row { margin-left: -15px; margin-right: -15px; }
+        @media (max-width: 767px) {
+            .display-3 { font-size: 2rem !important; }
+            .container-xxl { padding: 0 !important; }
+            .py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+            .mb-5 { margin-bottom: 3rem !important; }
+            .mb-4 { margin-bottom: 1.5rem !important; }
+            .mb-3 { margin-bottom: 1rem !important; }
+            .service-item-top .overflow-hidden { height: auto !important; }
+            .service-carousel .bg-light { min-height: auto; padding: 15px !important; }
+            .fact .row g-4 { flex-direction: column; }
+            .accordion-item .accordion-button { font-size: 1rem; }
+            table.table { font-size: 0.9rem; }
+            table.table td, table.table th { padding: 0.5rem; }
+            .page-header .display-3 { font-size: 2rem; }
+            .form-floating label { font-size: 0.9rem; }
+            .d-flex.align-items-center.mb-3 img { width: 40px; height: 40px; }
+            .copyright .row { flex-direction: column; text-align: center; }
+            .navbar-brand h1 { font-size: 1.5rem !important; white-space: normal !important; word-wrap: break-word !important; }
+        }
+        .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label { opacity: 0.65; transform: scale(.85) translateY(-.75rem) translateX(.15rem); }
+        .form-floating > .form-control:-webkit-autofill ~ label { opacity: 0.65; transform: scale(.85) translateY(-.75rem) translateX(.15rem); }
     </style>
-    <!-- Local Business Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "MENd",
-      "image": "https://www.chelsea.biz/img/logo.jpg",
-      "priceRange": "$$",
-      "sameAs": ["https://facebook.com/yourpage", "https://twitter.com/yourhandle"]
-    }
-    </script>
 </head>
 <body>
     <!-- Spinner Start -->
@@ -149,8 +163,7 @@
                 </div>
                 <div class="col-lg-6 pt-4" style="min-height: 500px;">
                     <div class="position-relative h-100 wow fadeInUp" data-wow-delay="0.5s">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/about-1.jpg" style="object-fit: cover; padding: 0 0 50px 100px;" alt="">
-                        <img class="position-absolute start-0 bottom-0 img-fluid bg-white pt-2 pe-2 w-50 h-50" src="img/about-2.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/park-walk.jpg" style="object-fit: cover; padding: 0 0 50px 100px;" alt="Two men walking and talking in the park during a MENd session">
                     </div>
                 </div>
             </div>
