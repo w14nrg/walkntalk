@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>MENd - Walk and Talk for Men's Mental Health in Hammersmith, Fulham, Kensington & Chelsea</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <meta name="keywords" content="men's mental health Hammersmith, walk and talk Fulham, mental health support Kensington, mental health support Chelsea, mental health services West London">
     <meta name="description" content="MENd is a community interest company offering one-to-one walk and talk support for men's mental health in Hammersmith & Fulham, Kensington & Chelsea. From men who have suffered to those who are suffering, we provide a safe space to talk, share experiences, and build resilience for any mental health reason. This is not therapy; for urgent needs, call 999 or Samaritans. Available in West London.">
     <!-- Favicon -->
@@ -42,6 +42,30 @@
         .service-carousel .bg-light { min-height: 400px; }
         .testimonial-carousel .testimonial-text { min-height: 150px; }
         .navbar-brand h2 { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 2.5rem; }
+        body { overflow-x: hidden; }
+        .container, .container-fluid { max-width: 100%; padding-left: 15px; padding-right: 15px; }
+        .row { margin-left: -15px; margin-right: -15px; }
+        @media (max-width: 767px) {
+            .display-3 { font-size: 2rem !important; }
+            .container-xxl { padding: 0 !important; }
+            .py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+            .mb-5 { margin-bottom: 3rem !important; }
+            .mb-4 { margin-bottom: 1.5rem !important; }
+            .mb-3 { margin-bottom: 1rem !important; }
+            .service-item-top .overflow-hidden { height: auto !important; }
+            .service-carousel .bg-light { min-height: auto; padding: 15px !important; }
+            .fact .row g-4 { flex-direction: column; }
+            .accordion-item .accordion-button { font-size: 1rem; }
+            table.table { font-size: 0.9rem; }
+            table.table td, table.table th { padding: 0.5rem; }
+            .page-header .display-3 { font-size: 2rem; }
+            .form-floating label { font-size: 0.9rem; }
+            .d-flex.align-items-center.mb-3 img { width: 40px; height: 40px; }
+            .copyright .row { flex-direction: column; text-align: center; }
+            .navbar-brand h1 { font-size: 1.5rem !important; white-space: normal !important; word-wrap: break-word !important; }
+        }
+        .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label { opacity: 0.65; transform: scale(.85) translateY(-.75rem) translateX(.15rem); }
+        .form-floating > .form-control:-webkit-autofill ~ label { opacity: 0.65; transform: scale(.85) translateY(-.75rem) translateX(.15rem); }
     </style>
     <!-- Local Business Schema -->
     <script type="application/ld+json">
@@ -128,7 +152,7 @@
                             <div class="col-10 col-lg-8">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">One-to-One Walk and Talk for Men's Mental Health</h5>
                                 <h1 class="display-3 text-white animated slideInDown mb-4">MENding Men One Walk at a Time</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">MENd provides one-to-one walk and talk support for men facing any mental health challenge or needing to vent. Not therapy—just men who’ve been there helping others, no qualifications, just experience. Unlike group settings, our private talks suit men who struggle to open up publicly (40% never discuss mental health). Depression affects 12.5% of men, with suicide rates at 17.4 per 100,000 males. For urgent needs, call 999 or Samaritans (116 123). Support in Hammersmith, Fulham, Kensington, and Chelsea could save a life.</p>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">MENd provides one-to-one walk and talk support for men facing any mental health challenge or needing to vent. Not therapy—just men who’ve been there helping others, no qualifications, just experience. Unlike group settings that can be intimidating, our private talks suit men who struggle to open up publicly (40% never discuss mental health). Depression affects 12.5% of men, with suicide rates at 17.4 per 100,000 males. For urgent needs, call 999 or Samaritans (116 123). Support in Hammersmith, Fulham, Kensington, and Chelsea could save a life.</p>
                                 <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" title="Call MENd for Walk and Talk Support in Kensington, Chelsea, Hammersmith & Fulham">Call MENd Now</a>
                                 <a href="#quote-form" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight" title="Get a Free Consultation for Walk and Talk Support">Free Walk and Talk Consultation</a>
                             </div>
@@ -274,6 +298,7 @@
                 </tbody>
             </table>
             <p class="text-center mt-4">These statistics show the urgent need for support like MENd's one-to-one walks. Your participation or donation could save a life. For urgent needs, call 999 or Samaritans (116 123).</p>
+            </div>
         </div>
     </div>
     <!-- Stats End -->
@@ -632,23 +657,9 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <!-- Custom Carousel Script -->
-    <script>
-        $(document).ready(function(){
-            $(".header-carousel").owlCarousel({
-                loop: true,
-                margin: 0,
-                nav: false,
-                dots: true,
-                autoplay: true,
-                autoplayTimeout: 10000,
-                smartSpeed: 1500,
-                items: 1
-            });
-        });
-    </script>
 </body>
 </html>
+
 
 
 
